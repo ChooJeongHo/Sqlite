@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ctEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ctBtn"
+        android:hint="카테고리"
+        android:minWidth="200dp"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/conEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctEt"
+        android:layout_toLeftOf="@+id/ctBtn"
+        android:hint="내용"
+        android:minWidth="200dp"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ctBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ctEt"
+        android:layout_alignBottom="@+id/ctEt"
+        android:layout_alignParentRight="true"
+        android:text="카테고리추가"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/conBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctBtn"
+        android:layout_alignLeft="@+id/ctBtn"
+        android:layout_alignRight="@+id/ctBtn"
+        android:text="내용추가"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conBtn"
+        android:layout_alignLeft="@+id/ctBtn"
+        android:layout_alignRight="@+id/ctBtn"
+        android:text="검색"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/contentTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/conEt"
+        android:hint="오늘 할일\n   밥먹기\n   잠자기\n장볼 내용\n   김치\n   두부\n   소면\n   골뱅이"
+        android:minWidth="200dp"
+        android:textSize="30sp" />
+
+</RelativeLayout>
